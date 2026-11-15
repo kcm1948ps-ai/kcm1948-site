@@ -146,6 +146,21 @@ h2 span { color: #d45968; }
 .button-outline { min-height: 40px; margin-top: 8px; color: #e2e8e8; border-color: rgba(255,255,255,.24); }
 .button-outline span { color: var(--cyan); }
 
+.updates-section { padding-top: 20px; padding-bottom: 80px; }
+.updates-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+.update-card { min-width: 0; display: grid; grid-template-columns: minmax(130px, .75fr) 1fr; overflow: hidden; border: 1px solid var(--line); background: #101d28; }
+.update-card > img { width: 100%; height: 100%; min-height: 190px; object-fit: cover; }
+.update-copy { display: flex; flex-direction: column; align-items: flex-start; padding: 22px; }
+.update-copy .card-label { margin-bottom: 10px; }
+.update-copy h3 { margin-bottom: 10px; font-size: 21px; }
+.update-copy > p:not(.card-label) { color: #9eafb5; font-size: 11px; line-height: 1.7; }
+.update-copy .text-link { margin-top: auto; }
+.contact-section { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 58px; padding-bottom: 62px; border-top: 1px solid var(--line); }
+.contact-section .eyebrow { margin-bottom: 10px; }
+.contact-section h2 { margin-bottom: 12px; }
+.contact-section h2 span { color: #d45968; }
+.contact-section p:not(.eyebrow) { max-width: 560px; margin-bottom: 0; color: #9eafb5; font-size: 11px; line-height: 1.7; }
+.contact-section .button { flex: 0 0 auto; }
 .community-section { padding-top: 83px; padding-bottom: 88px; }
 .community-heading { max-width: 610px; margin: 0 auto 34px; text-align: center; }
 .community-heading h2 { margin-bottom: 13px; }
@@ -200,6 +215,8 @@ h2 span { color: #d45968; }
   .about-inner { gap: 42px; }
   .about-visual { width: min(100%, 310px); min-height: 265px; }
   .social-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .update-card { grid-template-columns: 1fr; }
+  .update-card > img { min-height: 0; aspect-ratio: 1.5 / 1; }
 }
 @media (max-width: 620px) {
   html { scroll-padding-top: 66px; }
@@ -251,6 +268,15 @@ h2 span { color: #d45968; }
   .about-seal b { font-size: 8px; }
   .about-copy h2 { font-size: 38px; }
   .community-section { padding-top: 58px; padding-bottom: 60px; }
+  .updates-section { padding-top: 8px; padding-bottom: 55px; }
+  .updates-grid { grid-template-columns: 1fr; gap: 12px; }
+  .update-card { grid-template-columns: minmax(105px, .72fr) 1fr; }
+  .update-card > img { min-height: 100%; aspect-ratio: auto; }
+  .update-copy { padding: 14px; }
+  .update-copy h3 { font-size: 17px; }
+  .update-copy > p:not(.card-label) { font-size: 9px; }
+  .update-copy .card-label { font-size: 6px; }
+  .contact-section { align-items: flex-start; flex-direction: column; padding-top: 42px; padding-bottom: 48px; }
   .social-grid { gap: 8px; }
   .social-card { min-height: 96px; gap: 9px; padding: 10px 8px; }
   .social-icon { width: 29px; height: 29px; font-size: 13px; }

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: http://kcm1948.pl/sitemap.xml
+Sitemap: https://kcm1948.pl/sitemap.xml
